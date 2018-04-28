@@ -1,0 +1,6 @@
+print("--------------------------------------")
+print("THIS IS AN APP TO TEST pyinstaller")
+print("go to path, open terminal and type:")
+print("pyinstaller --onefile --window --icon=myicon.ico TestApp.py")
+print("go to dist folder that was created, copy executable to /austin5/bin")
+print("--------------------------------------")

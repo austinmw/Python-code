@@ -1,0 +1,11 @@
+
+Starting Nmap 7.12 ( https://nmap.org ) at 2016-06-03 13:38 EDT
+Nmap scan report for ec2-54-186-250-79.us-west-2.compute.amazonaws.com (54.186.250.79)
+Host is up (0.17s latency).
+Not shown: 97 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 5.83 seconds

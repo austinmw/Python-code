@@ -1,0 +1,73 @@
+digital ocean server
+
+ubuntu 16.04 64bit
+
+can visit http://162.243.3.200/ in browser
+
+ssh root@162.243.3.200
+pw naer..
+
+new user:
+austin
+pw a..
+(added to sudo group)
+
+
+
+generating key pair:
+on local machine:
+ssh-keygen
+
+to swith to new user from root:
+su - austin
+set up:
+mkdir ~/.ssh
+chmod 700 .ssh
+open authorized_keys
+copy generated key to this file and save
+return to root user: exit
+changed /etc/ssh/sshd_config: line PermitRootLogin yes    -> no
+service ssh restart
+
+
+ssh austin@162.243.3.200
+
+Run the following command to reveal your server’s IP address:
+ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
+
+
+installed (LAMP): (Linux, Apache, MySQL, PHP)
+apache2
+MySQL
+pw for mysql server: nae....
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
+
+LAMP stack now installed
+can test out php (created in /var/www/html/info.php) by visiting:
+
+http://162.243.3.200/info.php
+worked, but removed so as to not give info to unauthorized users
+
+
+copied server.py to root@amw-ubuntu-16:/var/www/html# 
+on server:
+python3 server.py
+
+if server.py is running on server and
+if client.py is running with server's IP address on client computer,
+server will notify of connection and
+can run from server that run on client computer and return the contents
+e.g.:
+touch ~/Desktop/bacon.txt
+
+next:
+multi-client, multi-threaded, reverse-shell
+after this will be able to control multiple computers remotely
+
+
+python3 server.py
+
+
+OS X external IP terminal command:
+dig +short myip.opendns.com @resolver1.opendns.com
+

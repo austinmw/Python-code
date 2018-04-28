@@ -1,0 +1,31 @@
+# this goes in mystuff.py
+def apple():
+	print "I AM APPLES!"
+Once I have this code, I can use the module MyStuff with import and then access the apple function:
+
+1
+2
+import mystuff
+mystuff.apple()
+I could also put a variable in it named tangerine:
+
+1
+2
+3
+4
+5
+def apple():
+	print "I AM APPLES!"
+
+# this is just a variable
+tangerine = "Living reflection of a dream"
+I can access that the same way:
+
+1
+2
+3
+4
+import mystuff
+
+mystuff.apple()
+print mystuff.tangerine

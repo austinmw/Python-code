@@ -1,0 +1,9 @@
+client.exe
+
+see with task manager > users > 'client'
+
+9955
+162.243.3.200
+
+
+remember: many hidden pyd and dll files on usb drive

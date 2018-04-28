@@ -1,0 +1,9 @@
+
+
+say you want to look at a meme off of reddit:
+need to request the image
+
+top down wrapping:
+ethernet frame- comp to router
+ip packet- router to server
+http request- get data

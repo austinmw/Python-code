@@ -1,0 +1,10 @@
+To use this environment, you need to activate it, which you can do by typing the following command that calls the activate script:
+
+$   source my_env/bin/activate
+
+
+Note: Within the virtual environment, you can use the command python instead of python3, and pip instead of pip3 if you would prefer. If you use Python 3 on your machine outside of an environment, you’ll need to use the python3 and pip3 commands exclusively, as python and pip will call an earlier version of Python. 
+
+
+
+To leave the environment, simply type the command deactivate and you’ll return to your original directory.
